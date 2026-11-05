@@ -1,0 +1,76 @@
+{
+ "id": "parakeet-tdt-0.6b-v2-int8",
+ "version": 1,
+ "ort": "1.24.1",
+ "encoderSha256": "3e0581fda6ab843888b51e56d7ee78b6d5bc3237ec113af1f732d1d5286aa155",
+ "total": 686507150,
+ "files": [
+  {
+   "path": "ort/ort.bundle.min.mjs",
+   "size": 403254,
+   "sha256": "596502090046e34eddfea50aa90dc9e684448e321e40945741a58a0e0af31e71",
+   "kind": "ort-mjs"
+  },
+  {
+   "path": "ort/ort-wasm-simd-threaded.jsep.wasm",
+   "size": 24911187,
+   "sha256": "5febcf74919ee7ba3c7e838290c9ef2c03d6da297f06a8facfd7d22f623d7cd9",
+   "kind": "ort-wasm"
+  },
+  {
+   "path": "vocab.txt",
+   "size": 10409,
+   "sha256": "d5b4ca312b07f10cc89b6ff1f500201b5bd826dc3f9500c115caeb36c0b10831",
+   "kind": "vocab"
+  },
+  {
+   "path": "decoder_joint-model.int8.onnx",
+   "size": 8998286,
+   "sha256": "a449f49acd68979d418651dd2dcb737cc0f1bf0225e009e29ee326354edbf7d3",
+   "kind": "decoder"
+  },
+  {
+   "path": "encoder-model.int8.onnx.part00",
+   "size": 99614720,
+   "sha256": "6d82363724004f0d21b0473164d1b02ebb59f5e0faf5438ed7d6d709d1a3a638",
+   "kind": "encoder"
+  },
+  {
+   "path": "encoder-model.int8.onnx.part01",
+   "size": 99614720,
+   "sha256": "e3091c6ffbac1d1ae20227f1f9765e99d80a38a42a047f8961677ed01d3a82e4",
+   "kind": "encoder"
+  },
+  {
+   "path": "encoder-model.int8.onnx.part02",
+   "size": 99614720,
+   "sha256": "9ea2d92afac5a21968728bbca38660133a3785d6506e0ce39173cb8f5797e988",
+   "kind": "encoder"
+  },
+  {
+   "path": "encoder-model.int8.onnx.part03",
+   "size": 99614720,
+   "sha256": "63dcd8a629fd8b444b3228747b3248b74678767261eccc73c80f1c90d908ca90",
+   "kind": "encoder"
+  },
+  {
+   "path": "encoder-model.int8.onnx.part04",
+   "size": 99614720,
+   "sha256": "d3822c062346edd43a5dc2582241d8355846df6a40a72f9d3e614c8eaa876d37",
+   "kind": "encoder"
+  },
+  {
+   "path": "encoder-model.int8.onnx.part05",
+   "size": 99614720,
+   "sha256": "873629d3893b0d8485c864447da80dedfddc4814b861adb3a955aa6920613537",
+   "kind": "encoder"
+  },
+  {
+   "path": "encoder-model.int8.onnx.part06",
+   "size": 54495694,
+   "sha256": "6a04c9e4bdb1d692029a9034fb55e178057029779e4f5a38a06e4a217037698c",
+   "kind": "encoder"
+  }
+ ],
+ "license": "CC-BY-4.0 (model: NVIDIA parakeet-tdt-0.6b-v2; ONNX int8 by istupakov / ysdede). Runtime: onnxruntime-web 1.24.1 (MIT)."
+}
