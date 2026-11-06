@@ -1,0 +1,18 @@
+Phonon 40M multilingual by Gradium
+Source: https://huggingface.co/gradium/phonon-40m-multilingual at revision a411985d04262e21e306e505bd59d8fe30bd486b
+License: Creative Commons Attribution-NonCommercial 4.0 International (LICENSE)
+Files copied unchanged: config.json, tokenizer.json, model.q8.gguf
+
+default-voice.safetensors: Gradium's default voice for this model (Reuben)
+Source: https://huggingface.co/gradium/phonon-40m-multilingual at revision 1537ce46c64f42903e0d608b132ccb073dac46d2
+License: Creative Commons Attribution-NonCommercial 4.0 International (LICENSE)
+Copied unchanged.
+
+voices/: Gradium catalogue voices, one native speaker per language
+Source: https://huggingface.co/gradium/phonon-voices at revision 0ee17205f254b5abc43b266c8a0f215565c352f7
+License: Apache License 2.0 (voices/LICENSE)
+Copied unchanged under their catalogue file names:
+  voices/Tek4tJXiX6_yvXq7.safetensors  Augustin, French (fr-fr), male
+  voices/R3uU1GTAZJotUhUs.safetensors  Mika, German (de-de), male
+  voices/Ejb29qHnSOK0cIHY.safetensors  Izan, Spanish (es-es), male
+  voices/mWgyMRkFED70QxQv.safetensors  Vitor, Portuguese (pt-br), male

@@ -28,3 +28,19 @@ Total: 11 files, 686,507,150 bytes.
 
 - Model weights (everything under `models/` except `ort/`): **CC-BY-4.0**. https://creativecommons.org/licenses/by/4.0/legalcode
 - `ort/`: **onnxruntime-web 1.24.1**, © Microsoft Corporation, **MIT License**. https://github.com/microsoft/onnxruntime/blob/main/LICENSE
+
+## Phonon read-aloud files (for Weekly)
+
+`phonon/` mirrors the Phonon text-to-speech files that **Weekly**'s Read aloud uses, so they load from `https://oscarvelz.github.io/cadence-voice/phonon/` when Hugging Face is unreachable.
+
+| Path | What it is |
+| --- | --- |
+| `phonon/model/model.q8.gguf.part0` … `part3` | Phonon 40M multilingual weights (q8), byte-split into 20 MiB parts; joined in order they are byte-identical to the original |
+| `phonon/model/tokenizer.json`, `config.json`, `default-voice.safetensors` | tokenizer, model config, default voice |
+| `phonon/voices/*.safetensors` | 50 Phonon catalogue voices |
+| `phonon/files.json` | each file's original Hugging Face URL (Weekly's cache key), parts, byte sizes and SHA-256 of the whole file and of every part |
+
+- **Model** (`phonon/model/`): by **Gradium**, **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** (non-commercial use only). Source: [gradium/phonon-40m-multilingual](https://huggingface.co/gradium/phonon-40m-multilingual) via [empyrealworks/Phonon-40M-multilingual](https://huggingface.co/empyrealworks/Phonon-40M-multilingual) @ `1191d231`. Only change: `model.q8.gguf` split into parts; no weights modified. See `phonon/LICENSE` and `phonon/NOTICE`.
+- **Voices** (`phonon/voices/`): by **Gradium**, **Apache-2.0**. Source: [gradium/phonon-voices](https://huggingface.co/gradium/phonon-voices) @ `0ee17205`, unmodified. See `phonon/voices/LICENSE`.
+
+The "Licenses" section above covers `models/` only.

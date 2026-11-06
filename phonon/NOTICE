@@ -1,0 +1,29 @@
+Phonon mirror for Weekly read aloud
+===================================
+
+This folder mirrors, for non-commercial use by the free personal app Weekly,
+the Phonon text-to-speech files below. Nothing was retrained or edited.
+
+phonon/model/ : Phonon 40M multilingual by Gradium
+  (model.q8.gguf, tokenizer.json, config.json, default-voice.safetensors)
+  Original: https://huggingface.co/gradium/phonon-40m-multilingual
+  Copied from: https://huggingface.co/empyrealworks/Phonon-40M-multilingual
+    at revision 1191d231388bc97330225a2cece698c074eaa3ca
+    (its own notice is kept as NOTICE-upstream)
+  Credit: Gradium.
+  License: Creative Commons Attribution-NonCommercial 4.0 International
+    (CC BY-NC 4.0), full text in LICENSE,
+    https://creativecommons.org/licenses/by-nc/4.0/
+  Changes: model.q8.gguf was split, byte for byte, into 20 MiB parts
+    (model.q8.gguf.part0 ... part3) so it can be served from GitHub Pages.
+    Joined in order the parts are identical to the original file (SHA-256 in
+    files.json). The other files are unmodified.
+
+phonon/voices/ : Phonon voices by Gradium (50 of the catalogue voices)
+  Original: https://huggingface.co/gradium/phonon-voices
+    at revision 0ee17205f254b5abc43b266c8a0f215565c352f7
+  License: Apache License 2.0, full text in voices/LICENSE,
+    https://www.apache.org/licenses/LICENSE-2.0
+  Changes: none. Files copied unmodified under their catalogue file names.
+
+No endorsement by Gradium is implied.
